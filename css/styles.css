@@ -2,7 +2,7 @@ body {
   padding-top: 50px;
   padding-bottom: 60px;
   background-color: #eb99de;
-  background-image: linear-gradient(rgb(220, 136, 198), rgb(238, 238, 103));
+  background-imag: linear-gradient(rgb(220, 136, 198), rgb(238, 238, 103));
   background-repeat: no-repeat;
   font-family: "Ink Free";
   font-style: normal;
@@ -29,26 +29,17 @@ p {
   background-image: linear-gradient(red, yellow);
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dpx) and (max-width: 767px) {
-  .container {
-    background-image: linear-gradient(red, yellow);
-    margin: 0 auto;
-  }
-}
-
 .edin {
   position: absolute;
   bottom: 0;
   left: 0;
-  transform: translate(0%, -113%);
+  transform: translate(0%, -143%);
 }
 .danse {
   position: absolute;
   bottom: 0;
   right: 0;
-  transform: translate(-99%, -177%);
+  transform: translate(0, -60%);
 }
 .title {
   position: absolute;
@@ -59,8 +50,8 @@ p {
 .calendar {
   position: absolute;
   top: 0;
-  left: 0;
-  transform: translate(-30%, 10%);
+  right: 0;
+  transform: translate(-36%, 137%);
 }
 .pony {
   position: absolute;
