@@ -66,8 +66,68 @@ p {
   margin-bottom: 70px;
 }
 .day {
+  display: inline-block;
   margin-bottom: 70px;
+  transition: scale 1000ms linear;
+}
+.day:hover {
+  transform: scale(1.5);
 }
 .by {
+  display: inline-block;
   margin-bottom: 70px;
+  transition: scale 1000ms linear;
+  z-index: 3;
+}
+
+.by:hover {
+  transform: scale(1.6);
+}
+body:hover {
+  animation-name: changeBgColor;
+  animation-duration: 3000ms;
+}
+
+@keyframes changeBgColor {
+  0% {
+    background-color: teal;
+  }
+
+  50% {
+    background-color: orange;
+  }
+
+  100% {
+    background-color: deepskyblue;
+  }
+}
+.in {
+  display: inline-block;
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.time {
+  font-size: 20px;
+  color: black;
+}
+.wrap {
+  position: relative;
+}
+.map {
+  position: absolute;
+  top: 34px;
+  right: -32px;
+  fill: #530c20;
 }
